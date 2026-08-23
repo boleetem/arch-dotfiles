@@ -1,0 +1,7 @@
+[2026-08-23 02:33:54.628] [info] Using configuration file /home/seirogan/.config/waybar/config.jsonc
+[2026-08-23 02:33:54.629] [info] Discovered appearance 'dark'
+[2026-08-23 02:33:54.639] [info] Using CSS file /home/seirogan/.config/waybar/style.css
+[2026-08-23 02:33:54.642] [info] Niri IPC starting
+[2026-08-23 02:33:54.755] [info] Bar configured (width: 1920, height: 32) for output: DP-2
+[2026-08-23 02:33:54.755] [error] Item '': No icon name or pixmap given.
+[2026-08-23 02:33:54.781] [error] Item '': No icon name or pixmap given.

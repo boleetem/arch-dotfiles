@@ -1,0 +1,74 @@
+[general]
+
+
+# ===WINDOW===
+[window]
+padding = {
+	x = 20,
+	y = 10
+}
+decorations = "None" #по скольку тайлинг
+
+
+
+
+# ===FONT===
+[font]
+size = 12
+offset = {
+	x = 0,
+	y = 0
+}
+
+normal = {
+	family = "hack",
+	style = "regular"
+}
+
+bold = {
+	family = "hack",
+	style = "bold"
+}
+
+italic = {
+	family = "hack",
+	style = "italic"
+}
+
+[scrolling]
+history = 15000
+multiplier = 5
+
+
+# ===COLORS===
+[colors.primary]
+foreground = "#fff9e8"
+background = "#0d0f17"
+
+
+[colors.normal]
+black   = "#0B1E33"
+red     = "#b34a33"
+green   = "#4A7C6F"
+yellow  = "#D9A876"
+blue    = "#2F6E9E"
+magenta = "#ab96d6"
+cyan    = "#5B9BC4"
+white   = "#E8D9C0"
+ 
+[colors.bright]
+black   = "#4f4f4f"
+red     = "#C46B4F"
+green   = "#6FA89A"
+yellow  = "#F0C896"
+blue    = "#4A8FC2"
+magenta = "#9B7A94"
+cyan    = "#8FC4E0"
+white   = "#F5EBD8"
+
+
+[mouse]
+hide_when_typing = true
+
+[hints]
+enabled = [{ regex = "https?://[^\\s]+", command = "xdg-open", mouse = { enabled = true } }]

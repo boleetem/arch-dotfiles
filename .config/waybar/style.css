@@ -1,0 +1,47 @@
+* {
+    font-family: "hack", sans-serif;
+    font-size: 13px;
+    min-height: 0;
+}
+
+window#waybar {
+    background: rgb(11, 11, 17);
+    color: #cdd6f4;
+}
+
+
+#workspaces button {
+    padding: 0 10px;
+    color: #a6adc8;
+    background: transparent;
+    border-radius: 0;
+    border-bottom: 2px solid transparent;
+}
+
+#workspaces button.active {
+    color: #89b4fa;
+    background: transparent;
+    border-bottom: 2px solid #89b4fa;
+}
+
+#workspaces button:hover {
+    color: #cdd6f4;
+}
+
+#window {
+    padding: 0 10px;
+    color: #f5c2e7;
+}
+
+#clock {
+    font-weight: bold;
+    padding: 0 12px;
+}
+
+#cpu, #memory, #network, #pulseaudio {
+    padding: 0 10px;
+}
+
+#tray {
+    padding: 0 10px;
+}
