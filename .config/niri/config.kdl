@@ -6,7 +6,7 @@ input {
              options "grp:win_space_toggle"
         }
 
-        // Включает нам лок при стартапе.
+        // enables numlock
         numlock
     }
 
@@ -44,7 +44,7 @@ layout {
         proportion 0.66667
     }
 
-    default-column-width { proportion 0.5; } //размер окна деф
+    default-column-width { proportion 0.5; } //default window size
 
     focus-ring {
         // off
@@ -116,11 +116,11 @@ spawn-sh-at-startup "~/.config/autostart/autostart.sh"
 
 
 hotkey-overlay {
-     skip-at-startup //скипнуть начальное напоминание о хоткеях
+     skip-at-startup //skipping startup tip about hotkeys
 }
 
 
-screenshot-path null //отключение сохранения на диск, оставляя буфер обмена
+screenshot-path null //all screenshots saves only to clipboard
 
 
 
@@ -155,7 +155,7 @@ animations {
 	  }
 
      //slowdown 3.0 
-    //SLOW DOWN ALL animations
+    //slowdown ALL animations
 }
 
 
@@ -189,6 +189,16 @@ window-rule {
 
 window-rule {
 	match app-id="zen"
+	open-maximized true
+}
+
+window-rule {
+	match app-id="steam"
+	open-maximized true
+}
+
+window-rule {
+	match app-id="md.obsidian.Obsidian"
 	open-maximized true
 }
 // **==========KEYBINDS==========**
