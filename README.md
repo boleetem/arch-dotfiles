@@ -16,9 +16,9 @@ sudo pacman -S stow
 
 ### Setup Instructions
 
-1. **Create the dotfiles directory** in your home folder:
+1. **Create and enter the dotfiles directory** in your home folder:
 ```bash
-cd ~/.dotfiles
+mkdir ~/.dotfiles && cd ~/.dotfiles
 ```
 
 2. **Clone this repository**:
