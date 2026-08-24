@@ -2,29 +2,40 @@
 
 ![preview](img.jpg)
 
-## How to install
 
-### Install the GNU stow by
-##### On Arch :
-        ```sudo pacman -S stow```
+## Installation
 
-### Make the dotfiles dir
-- On the home dir
-```mkdir ~/.dotfiles```
+### Prerequisites
 
-### Switch to this dir 
-        ```cd ~/.dotfiles```
+Make sure you have **GNU Stow** installed on your system.
 
-### Clone this repo
-        ```git clone https://github.com/boleetem/arch-dotfiles```
+#### Arch Linux
+```bash
+sudo pacman -S stow
+```
 
-### Move all directories in the directory "arch-dotfiles"
-###                    to the ~/.dotfiles
-> So it will be like ~/.dotfiles/.config/
+### Setup Instructions
 
-### Enter to the ~/.dotfiles and use GNU stow
-        ```stow .```
+1. **Create the dotfiles directory** in your home folder:
+```bash
+cd ~/.dotfiles
+```
 
-## U Done !
+2. **Clone this repository**:
+```bash
+git clone https://github.com/boleetem/arch-dotfiles
+```
 
-        
+3. **Move all directories** from `arch-dotfiles` to `~/.dotfiles` so that the structure looks like:
+```
+~/.dotfiles/.config/
+```
+
+4. **Apply the configuration** using GNU Stow:
+```bash
+cd ~/.dotfiles
+stow .
+```
+
+## You are Done!
+
