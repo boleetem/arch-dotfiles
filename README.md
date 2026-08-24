@@ -10,7 +10,7 @@
 
 ### Make the dotfiles dir
 - On the home dir
-         ```mkdir .dotfiles```
+```mkdir ~/.dotfiles```
 
 ### Switch to this dir 
         ```cd ~/.dotfiles```
