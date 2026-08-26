@@ -112,7 +112,6 @@ spawn-at-startup "xwayland-satellite"
 
 spawn-sh-at-startup "swaybg --image ~/wallpapers/wallpaper.jpg"
 spawn-sh-at-startup "~/.config/ThemeSwitcher/ThemeSwitcher.sh"
-spawn-sh-at-startup "~/.config/autostart/autostart.sh"
 
 
 hotkey-overlay {
