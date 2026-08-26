@@ -17,25 +17,26 @@ ignore-timeout=1
 icons=1
 max-icon-size=48
 
-background-color=#0A0D12F2
+background-color=#030905
 text-color=#C9CDD3
-border-color=#EB7F00
+border-color=#529e2c
+
 
 [urgency=low]
-background-color=#0A0D12F2
-text-color=#5C6470
-border-color=#7A4400
+background-color=#030905
+text-color=#C9CDD3
+border-color=#529e2c
 default-timeout=3000
 
 [urgency=normal]
-background-color=#0A0D12F2
+background-color=#030905
 text-color=#C9CDD3
-border-color=#EB7F00
+border-color=#529e2c
 
 [urgency=high]
-background-color=#0F0A0AF2
-text-color=#E8E6E3
-border-color=#FF9E33
+background-color=#030905
+text-color=#C9CDD3
+border-color=#529e2c
 default-timeout=0
 
 [mode=dnd]
