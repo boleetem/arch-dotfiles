@@ -1,0 +1,97 @@
+# ==============================================================================
+#  ironbar — config.toml
+#  Тема: Gruvbox Dark (зелёный акцент)
+#  Положить в: ~/.config/ironbar/config.toml
+#
+#  Для значков-иконок в тексте нужен установленный Nerd Font
+#  (например "JetBrainsMono Nerd Font") — он же прописан в style.css.
+#  Нет Nerd Font — замени иконки-глифы в format/icons на текст или эмодзи.
+# ==============================================================================
+
+name            = "main"
+position        = "top"
+anchor_to_edges = true
+height          = 34
+
+layer          = "top"
+exclusive_zone = true
+popup_gap      = 6
+popup_autohide = true
+
+[margin]
+top    = 8
+bottom = 0
+left   = 10
+right  = 10
+
+# ------------------------------------------------------------------ start ---
+[[start]]
+type = "workspaces"
+all_monitors = false
+sort = "index"
+favorites = ["1", "2", "3", "4", "5"]
+
+[[start]]
+type  = "focused"
+class = "focused"
+show_icon  = true
+show_title = true
+icon_size  = 18
+
+[start.truncate]
+mode       = "end"
+max_length = 42
+
+# ----------------------------------------------------------------- center ---
+[[center]]
+type   = "clock"
+class  = "clock"
+format = "  %H:%M  •  %A, %d %B"
+format_popup      = "%H:%M:%S"
+show_week_numbers = true
+
+# -------------------------------------------------------------------- end ---
+[[end]]
+type   = "sys_info"
+class  = "sysinfo"
+format = [
+    " {cpu_percent}%",
+    " {memory_used} / {memory_total} GB",
+]
+
+[end.interval]
+cpu    = 3
+memory = 10
+
+[[end]]
+type   = "volume"
+class  = "volume"
+format      = "{icon}  {percentage}%"
+mute_format = "  muted"
+max_volume  = 100
+sink_slider_orientation = "vertical"
+
+[end.icons]
+volume = "󰕾"
+muted  = "󰝟"
+
+[[end]]
+type   = "battery"
+class  = "battery"
+format    = "{percentage}%"
+icon_size = 16
+show_icon  = true
+show_label = true
+
+[end.profiles.warning]
+percent = 25
+
+[end.profiles.critical]
+when   = { percent = 10, charging = false }
+format = "{percentage}% low"
+
+[[end]]
+type      = "tray"
+class     = "tray"
+icon_size = 18
+direction = "horizontal"

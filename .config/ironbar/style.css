@@ -1,0 +1,287 @@
+/* ==============================================================================
+ *  ironbar — style.css
+ *  Тема: Gruvbox Dark, зелёный акцент
+ *  Положить в: ~/.config/ironbar/style.css
+ *
+ *  Использует официальный GTK CSS `@define-color` — своя мини-палитра
+ *  Gruvbox, чтобы цвета переиспользовались во всех блоках ниже.
+ * ============================================================================ */
+
+@define-color bg0_hard  #1d2021;
+@define-color bg0       #282828;
+@define-color bg1       #3c3836;
+@define-color bg2       #504945;
+@define-color bg3       #665c54;
+@define-color bg4       #7c6f64;
+
+@define-color fg0       #fbf1c7;
+@define-color fg1       #ebdbb2;
+@define-color fg2       #d5c4a1;
+@define-color fg3       #bdae93;
+@define-color fg4       #a89984;
+
+@define-color gray      #928374;
+@define-color red       #fb4934;
+@define-color red_dim   #cc241d;
+@define-color yellow    #fabd2f;
+@define-color yellow_dim #d79921;
+@define-color aqua      #8ec07c;
+@define-color aqua_dim  #689d6a;
+@define-color orange    #fe8019;
+@define-color blue      #83a598;
+@define-color purple    #d3869b;
+
+/* акцент бара — зелёный gruvbox */
+@define-color accent       #b8bb26;
+@define-color accent_dim   #98971a;
+@define-color accent_ink   #1d2021; /* текст поверх зелёной заливки */
+
+* {
+    font-family: "JetBrainsMono Nerd Font", "Noto Sans", sans-serif;
+    font-size: 13px;
+    color: @fg1;
+    /* GTK CSS поддерживает transition только частично, но на кнопках работает */
+    transition: background-color 150ms ease, color 150ms ease, opacity 150ms ease;
+}
+
+/* ------------------------------------------------------------------- окно --- */
+.background {
+    background-color: transparent;
+}
+
+/* -------------------------------------------------------------- корень бара - */
+#bar {
+    background-color: alpha(@bg0, 0.92);
+    border: 1px solid @bg2;
+    border-radius: 12px;
+    padding: 0 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.35);
+}
+
+#bar #start,
+#bar #center,
+#bar #end {
+    padding: 0 4px;
+}
+
+.widget-container {
+    padding: 0 2px;
+}
+
+/* ----------------------------------------------------------------- popups --- */
+.popup {
+    background-color: @bg0_hard;
+    border: 1px solid @accent_dim;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.5);
+}
+
+/* ------------------------------------------------------------- workspaces --- */
+.workspaces {
+    background-color: @bg1;
+    border-radius: 10px;
+    padding: 3px;
+}
+
+.workspaces .item {
+    min-width: 26px;
+    min-height: 22px;
+    margin: 0 2px;
+    padding: 0 6px;
+    border-radius: 8px;
+    background-color: transparent;
+    color: @fg3;
+    border: none;
+}
+
+.workspaces .item:hover {
+    background-color: @bg2;
+    color: @fg0;
+}
+
+.workspaces .item.visible {
+    background-color: @bg2;
+    color: @fg1;
+}
+
+.workspaces .item.focused {
+    background-color: @accent;
+    color: @accent_ink;
+    font-weight: bold;
+}
+
+.workspaces .item.urgent {
+    background-color: @red;
+    color: @bg0_hard;
+}
+
+.workspaces .item.inactive {
+    color: @bg4;
+}
+
+/* ---------------------------------------------------------------- focused --- */
+.focused {
+    padding: 0 8px;
+    color: @fg3;
+}
+
+.focused .icon {
+    margin-right: 6px;
+}
+
+.focused .label {
+    color: @fg2;
+}
+
+/* ------------------------------------------------------------------ clock --- */
+.clock {
+    background-color: transparent;
+    color: @accent;
+    font-weight: 600;
+    padding: 0 10px;
+    border-radius: 8px;
+}
+
+.clock:hover {
+    background-color: @bg1;
+}
+
+.popup-clock .calendar-clock {
+    color: @accent;
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+.popup-clock .calendar {
+    background-color: @bg0_hard;
+    color: @fg1;
+    border-radius: 8px;
+}
+
+/* --------------------------------------------------------------- sysinfo --- */
+.sysinfo {
+    padding: 0 4px;
+}
+
+.sysinfo .item {
+    color: @aqua;
+    padding: 0 6px;
+    font-weight: 500;
+}
+
+/* ----------------------------------------------------------------- volume -- */
+.volume {
+    padding: 0 8px;
+    border-radius: 8px;
+    color: @fg1;
+}
+
+.volume:hover {
+    background-color: @bg1;
+}
+
+.popup-volume .device-box .slider,
+.popup-volume .apps-box .app-box .slider {
+    min-height: 90px;
+}
+
+.popup-volume .device-box .slider highlight,
+.popup-volume .apps-box .app-box .slider highlight {
+    background-color: @accent;
+}
+
+.popup-volume .device-box .btn-mute,
+.popup-volume .apps-box .app-box .btn-mute {
+    color: @fg2;
+    border-radius: 6px;
+}
+
+.popup-volume .apps-box .app-box {
+    background-color: @bg1;
+    border-radius: 8px;
+    padding: 6px;
+    margin: 4px 0;
+}
+
+.popup-volume .apps-box .app-box .title {
+    color: @fg1;
+}
+
+/* ---------------------------------------------------------------- battery -- */
+.battery {
+    padding: 0 8px;
+    color: @fg1;
+}
+
+.battery .icon {
+    color: @accent;
+}
+
+.battery.warning {
+    color: @yellow;
+}
+
+.battery.warning .icon {
+    color: @yellow;
+}
+
+.battery.critical {
+    color: @red;
+}
+
+.battery.critical .icon {
+    color: @red;
+}
+
+.popup-battery .details {
+    color: @fg2;
+}
+
+/* ------------------------------------------------------------------- tray -- */
+.tray {
+    padding: 0 4px;
+}
+
+.tray .item {
+    padding: 0 5px;
+    border-radius: 6px;
+}
+
+.tray .item:hover {
+    background-color: @bg1;
+}
+
+.tray .item.urgent {
+    background-color: @red_dim;
+    border-radius: 6px;
+}
+
+/* -------------------------------------------------------- общие элементы --- */
+tooltip {
+    background-color: @bg0_hard;
+    color: @fg1;
+    border: 1px solid @accent_dim;
+    border-radius: 6px;
+    padding: 4px 8px;
+}
+
+scrollbar slider {
+    background-color: @bg3;
+    border-radius: 6px;
+}
+
+scrollbar slider:hover {
+    background-color: @accent_dim;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+}
+
+button:hover {
+    background-color: @bg1;
+}

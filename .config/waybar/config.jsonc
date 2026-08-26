@@ -2,7 +2,7 @@
     "layer": "top",
     "position": "top",
     "height": 32,
-    "spacing": 4,
+    "spacing": 0,
     "margin-top": 0,
     "margin-left": 0,
     "margin-right": 0,
@@ -18,14 +18,13 @@
 
     "niri/window": {
         "format": "{title}",
-        "max-length": 50,
+        "max-length": 30,
         "separate-outputs": true
     },
 
     "clock": {
         "format": "{:%H:%M   %d.%m.%Y}",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-        "on-click": "gnome-calendar"
     },
 
     "cpu": {
@@ -41,9 +40,9 @@
     "network": {
         "format-wifi": " {essid} ({signalStrength}%)",
         "format-ethernet": " {ipaddr}",
-        "format-disconnected": "⚠ Нет сети",
+        "format-disconnected": "No connection",
         "tooltip-format": "{ifname}: {ipaddr}/{cidr}",
-        "on-click": "nm-connection-editor"
+        "on-click": ""
     },
 
     "pulseaudio": {

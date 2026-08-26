@@ -5,36 +5,45 @@
 }
 
 window#waybar {
-    background: rgb(11, 11, 17);
-    color: #cdd6f4;
+    background: rgb(3, 9, 5);
+    color: #529e2c;
 }
 
 
 #workspaces button {
     padding: 0 10px;
-    color: #a6adc8;
+    margin: 0px;
+    color: #529e2c;
     background: transparent;
     border-radius: 0;
-    border-bottom: 2px solid transparent;
+    border: none;
+    border-bottom: 2px dotted;
+    border-bottom-color: #234413;
+
 }
 
 #workspaces button.active {
-    color: #89b4fa;
+    color: #7bff5a;
     background: transparent;
-    border-bottom: 2px solid #89b4fa;
+    border-bottom: 2px solid #7bff5a;
 }
 
 #workspaces button:hover {
-    color: #cdd6f4;
+    transition: none;
+    animation:none;
+    border: none;
+    padding-bottom: 8px;
+    box-shadow: inset 0 -2px 0 #234413;
+
 }
 
 #window {
     padding: 0 10px;
-    color: #f5c2e7;
+    color: #79c975;
 }
 
 #clock {
-    font-weight: bold;
+    font-size: 15px;
     padding: 0 12px;
 }
 

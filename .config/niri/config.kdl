@@ -49,15 +49,8 @@ layout {
     focus-ring {
         // off
         width 2
-        active-color "#eb7f00" //orange
-        inactive-color "#ffb12b"
-		//active-gradient from="#80c8ff" to="#c7ff7f" angle=45
-
-        // You can also color the gradient relative to the entire view
-        // of the workspace, rather than relative to just the window itself.
-        // To do that, set relative-to="workspace-view".
-        //
-        // inactive-gradient from="#505050" to="#808080" angle=45 relative-to="workspace-view"
+        active-color "#c0ffb2" 
+        inactive-color "#ff7b7b"
     }
 
 
@@ -127,7 +120,7 @@ screenshot-path null //all screenshots saves only to clipboard
 // https://niri-wm.github.io/niri/Configuration:-Animations
 
 animations {
-     //off
+    off
 
     workspace-switch {
     	spring damping-ratio=0.8 stiffness=5000 epsilon=0.0001
@@ -153,7 +146,7 @@ animations {
 		curve "linear"
 	  }
 
-     slowdown 3.0 
+     //slowdown 3.0 
     //slowdown ALL animations
 }
 
@@ -472,7 +465,5 @@ binds {
     Mod+Shift+E { quit; }
     Ctrl+Alt+Delete { quit; }
 
-    // Powers off the monitors. To turn them back on, do any input like
-    // moving the mouse or pressing any other key.
     Mod+Shift+P { power-off-monitors; }
 }

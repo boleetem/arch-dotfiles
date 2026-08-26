@@ -43,7 +43,7 @@ multiplier = 5
 # ===COLORS===
 [colors.primary]
 foreground = "#fff9e8"
-background = "#0d0f17"
+background = "#040904"
 
 
 [colors.normal]
@@ -51,9 +51,9 @@ black   = "#0B1E33"
 red     = "#b34a33"
 green   = "#4A7C6F"
 yellow  = "#D9A876"
-blue    = "#2F6E9E"
-magenta = "#ab96d6"
-cyan    = "#5B9BC4"
+blue    = "#169400"
+magenta = "#17b580"
+cyan    = "#7bcf63"
 white   = "#E8D9C0"
  
 [colors.bright]
@@ -61,14 +61,12 @@ black   = "#4f4f4f"
 red     = "#C46B4F"
 green   = "#6FA89A"
 yellow  = "#F0C896"
-blue    = "#4A8FC2"
-magenta = "#9B7A94"
-cyan    = "#8FC4E0"
+blue    = "#2e7920"
+magenta = "#234413"
+cyan    = "#529e2c"
 white   = "#F5EBD8"
 
 
 [mouse]
 hide_when_typing = true
 
-[hints]
-enabled = [{ regex = "https?://[^\\s]+", command = "xdg-open", mouse = { enabled = true } }]
