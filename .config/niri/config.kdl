@@ -110,7 +110,7 @@ spawn-at-startup "waybar"
 spawn-at-startup "xwayland-satellite"
 
 
-spawn-sh-at-startup "~/.config/swaybg/background.sh"
+spawn-sh-at-startup "swaybg --image ~/wallpapers/wallpaper.jpg"
 spawn-sh-at-startup "~/.config/ThemeSwitcher/ThemeSwitcher.sh"
 spawn-sh-at-startup "~/.config/autostart/autostart.sh"
 
@@ -154,7 +154,7 @@ animations {
 		curve "linear"
 	  }
 
-     //slowdown 3.0 
+     slowdown 3.0 
     //slowdown ALL animations
 }
 
