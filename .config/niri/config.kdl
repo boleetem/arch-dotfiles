@@ -36,7 +36,7 @@ output "DP-2" {
 
 
 layout {
-    gaps 6
+    gaps 4
     center-focused-column "never"
     preset-column-widths {
         proportion 0.33333
@@ -85,10 +85,10 @@ layout {
 
 
     struts {                    //отступы от краев монитора.
-         left -4
-         right -4
-         top -4
-         bottom -4
+         left 0
+         right 0
+         top -1
+         bottom 0
     }
 }
 
@@ -191,6 +191,16 @@ window-rule {
 
 window-rule {
 	match app-id="md.obsidian.Obsidian"
+	open-maximized true
+}
+
+window-rule {
+	match app-id="discord"
+	open-maximized true
+}
+
+window-rule {
+	match app-id="io.github.kukuruzka165.materialgram"
 	open-maximized true
 }
 // **==========KEYBINDS==========**
