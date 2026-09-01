@@ -101,7 +101,7 @@ prefer-no-csd //Просит убрать декорации приложени�
 // ======STARTUP====== 
 spawn-at-startup "waybar"
 spawn-at-startup "xwayland-satellite"
-
+spawn-at-startup "discord"
 
 spawn-sh-at-startup "swaybg --image ~/wallpapers/wallpaper.jpg"
 spawn-sh-at-startup "~/.config/ThemeSwitcher/ThemeSwitcher.sh"
