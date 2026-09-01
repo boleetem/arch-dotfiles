@@ -1,0 +1,14 @@
+interval: 5
+button:
+- yt
+- lastfm
+lastfm_name: Seirogan
+listenbrainz_name: ''
+rpc_name: track
+small_image: player
+disable_mpris_art_url: false
+allowlist: []
+video_players: []
+hide_album_name: true
+only_when_playing: false
+disable_musicbrainz_cover: true
