@@ -37,10 +37,6 @@ window#waybar {
 
 }
 
-#window {
-    padding: 0 10px;
-    color: #79c975;
-}
 
 #clock {
     font-size: 15px;

@@ -7,7 +7,7 @@
     "margin-left": 0,
     "margin-right": 0,
 
-    "modules-left": ["niri/workspaces", "niri/window"],
+    "modules-left": ["niri/workspaces"],
     "modules-center": ["clock"],
     "modules-right": ["pulseaudio", "network", "cpu", "memory", "tray"],
 
@@ -16,11 +16,7 @@
         "on-click": "activate"
     },
 
-    "niri/window": {
-        "format": "{title}",
-        "max-length": 30,
-        "separate-outputs": true
-    },
+
 
     "clock": {
         "format": "{:%H:%M   %d.%m.%Y}",
