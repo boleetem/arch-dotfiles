@@ -1,6 +1,6 @@
 # Seirogan's dotfiles for niri
 
-![preview](img.jpg)
+![preview](img.png)
 
 
 ## Installation
