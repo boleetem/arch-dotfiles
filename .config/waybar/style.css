@@ -1,5 +1,5 @@
 * {
-    font-family: "hack", sans-serif;
+    font-family: "Hack", sans-serif;
     font-size: 13px;
     min-height: 0;
 }
@@ -37,13 +37,24 @@ window#waybar {
 
 }
 
+#mpris {
+  padding-right: 6px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  border: 2px solid;
+  border-color: #529e2c;
+  border-radius: 15px;
+
+}
+
+
 
 #clock {
     font-size: 15px;
     padding: 0 12px;
 }
 
-#cpu, #memory, #network, #pulseaudio {
+#cpu, #memory, #network, #pulseaudio  {
     padding: 0 10px;
 }
 

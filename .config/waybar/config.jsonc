@@ -7,7 +7,7 @@
     "margin-left": 0,
     "margin-right": 0,
 
-    "modules-left": ["niri/workspaces"],
+    "modules-left": ["niri/workspaces", "mpris"],
     "modules-center": ["clock"],
     "modules-right": ["pulseaudio", "network", "cpu", "memory", "tray"],
 
@@ -55,5 +55,11 @@
     "tray": {
         "icon-size": 18,
         "spacing": 10
+    },
+
+    "mpris": {
+        "format": " {title}",
+        "player-icons": { "default": "" },
+        "max-lenght" : 5
     }
 }
