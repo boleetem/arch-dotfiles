@@ -58,7 +58,7 @@
     },
 
     "mpris": {
-        "format": " {title}",
+        "format": " {title} ",
         "player-icons": { "default": "" },
         "max-lenght" : 5
     }
